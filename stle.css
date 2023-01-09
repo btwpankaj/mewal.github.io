@@ -1,0 +1,282 @@
+/* Google Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+.btn {
+    margin-top: 2rem;
+    width: 150px;
+    padding: 12px;
+    color: #fff;
+    background: tomato;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(212, 48, 48, 0.76);
+    transition: 0.4s;
+}
+
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0.3rem 9%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    background-color: rgba(164, 149, 252, 0.322);
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    padding-right: 10px;
+    margin-right: 20rem;
+}
+
+.header .logo i {
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.header .navbar a {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #baa6cf;
+}
+
+.header .btn {
+    background: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+    font-size: 12px;
+    padding: 8px;
+}
+
+
+/* Home Section */
+
+.max-width {
+    max-width: 1700px;
+    padding: 210px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+.home {
+    display: flex;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+}
+
+.home .home-content {
+    width: 95%;
+    padding: 2px;
+}
+
+.home h3 {
+    color: rgb(119, 117, 182);
+    margin-top: 1rem;
+    font-size: 7rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.home p {
+    color: rgb(194, 191, 191);
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.home .home-image {
+    width: 0%;
+}
+
+.home .home-image img {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #151320;
+}
+
+section {
+    height: 50vh;
+    display: flex;
+    padding: 0 4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    perspective: 1000px;
+    height: 28vh;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card {
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: linear-gradient(to right, #a246ef, #6523fe);
+}
+
+.front img {
+    width: 5em;
+}
+
+.content {
+    transform: translateZ(60px);
+}
+
+.content h3 {
+    font-size: 22px;
+    margin-top: 1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    padding: 0 3em;
+}
+
+.back {
+    background-color: #28253a;
+    transform: rotateX(180deg);
+}
+
+.container:hover .card {
+    transform: rotateX(180deg);
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 0 1em;
+    }
+    .container {
+        flex-basis: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1.5em;
+    }
+}
+
+
+/*weather */
+
+.VVBV {
+    height: 218px;
+    width: 470px;
+    position: absolute;
+    margin: auto;
+    left: 0p;
+    right: 0;
+    top: 42px;
+    bottom: 0p;
+    border: 1px solid rgba(255, 248, 248, 0);
+    border-radius: px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.VVBV * {
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+}
+
+.clock {
+    width: 100%;
+    background-color: rgba(53, 49, 41, 0);
+    padding: 50px 25px;
+    border: 1.5px solid rgba(255, 255, 255, 0);
+    display: flex;
+}
+
+#day {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #c5c5c5;
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#time {
+    font-size: 50px;
+    display: inline-block;
+}
+
+#midday {
+    display: inline-block;
+    font-size: 30px;
+}
